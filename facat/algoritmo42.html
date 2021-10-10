@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" Informar se o funcionario de uma empresa pode se aposentar">
+    <meta name="author" content="Pedro Rocha">
+    <meta name="keywords" content="exercico,algoritmo,javascript">
+    <title>Algoritmos - 42</title>
+</head>
+
+<body>
+    <!--
+        Uma empresa quer verificar se um empregado está qualificado para a aposentadoria ou não. Para
+estar em condições, um dos seguintes requisitos deve ser satisfeito:
+ - Ter no mínimo 65 anos de idade.
+ - Ter trabalhado no mínimo 30 anos.
+ - Ter no mínimo 60 anos e ter trabalhado no mínimo 25 anos.
+Com base nas informações acima, faça um algoritmo que leia: o número do empregado (código), o ano
+de seu nascimento e o ano de seu ingresso na empresa. O programa deverá escrever a idade e o tempo
+de trabalho do empregado e a mensagem 'Requerer aposentadoria' ou 'Não requerer'.
+---->
+<script>
+
+    var nome =prompt("INFORME O NOME DO EMPREGADO: ");
+    var idade = parseInt(prompt("INFORME A IDADE DO EMPREGADO"));
+    var tempo = parseInt(prompt("INFORME O TEMPO DE EMPREGA QUE O EMPREGADO TEM: "));
+    if(idade>=65 || tempo>=30){
+        alert("O EMPREGADO "+nome+ " ESTA EM CONDIÇÕES DE SE APOSENTAR");
+
+    }
+    else if(idade>=60 && tempo>=24) {
+
+        alert("O EMPREGADO "+nome+ " ESTA EM CONDIÇÕES DE SE APOSENTAR");
+
+    }
+    else{
+        alert("O EMPREGADO "+nome+ " NÃO ESTÁ EM CONDIÇÕES DE SE APOSENTAR");
+    }
+    
+</script>
+
+</body>
+
+</html>

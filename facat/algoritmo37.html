@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" Ler a quanitdade adquirida de maçãs e morangos e informa valor total a ser pago">
+    <meta name="author" content="Pedro Rocha">
+    <meta name="keywords" content="exercico,algoritmo,javascript">
+    <title>Algoritmos - 37</title>
+</head>
+
+<body>
+    <!--
+        Se o cliente comprar mais de 8 Kg em frutas ou o valor total da compra ultrapassar R$ 25,00, receberá
+ainda um desconto de 10% sobre este total. Escreva um algoritmo para ler a quantidade (em Kg) de
+morangos e a quantidade (em Kg) de maças adquiridas e escreva o valor a ser pago pelo cliente.  ---->
+    <script>
+        var maca = parseFloat(prompt("Informe quantos KG de Maçã você quer:  "));
+        var morango = parseFloat(prompt("Informe quantos KG de morango você quer:  "));
+        var quantidade = morango+maca;
+        
+        // Calculo da maçã
+        if(maca<=5){
+            var total= 1.80*maca;
+        }
+        else {
+        
+            var total= 1.50*maca;
+        }
+        
+        // Calculo do morango 
+        if(morango<=5){
+            var total= 2.50*morango +total;
+        }
+            
+        else {
+            var total= 2.20*morango +total;
+        }
+        // desconto de ambos
+        if (total>25 || quantidade>8) {
+            var total=total-(total*0.10);
+        }
+
+        alert("O valor a ser pago pelas maçãs e pelos morango vai ser de R$"+total.toFixed(2));
+            
+        
+
+        
+       
+      
+
+        
+    </script>
+</body>
+
+</html>

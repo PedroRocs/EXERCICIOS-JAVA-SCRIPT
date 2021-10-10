@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content=" Escreva um algoritmo para ler um valor (do teclado) e escrever (na tela) o seu sucessor.">
+    <meta name="author" content="Pedro Rocha">
+    <meta name="keywords" content="exercico,algoritmo,javascript">
+    <title>Algoritmos - 7</title>
+</head>
+
+<body>
+    <!--  Elaborar um programa que efetue a leitura sucessiva de valores numéricos e apresente no final o
+total do somatório, a média aritmética e o total de valores lidos. O programa deve fazer as leituras
+dos valores enquanto o usuário estiver fornecendo valores positivos. Ou seja, o programa deve
+parar quando o usuário fornecer um valor negativo. Não se esqueça que o usuário pode entrar
+como primeiro número um número negativo, portanto, cuidado com a divisão por zero no cálculo da
+média.  -->
+    <p id="demo"></p>
+    <script>
+        var cont=0;
+        var n1="";
+        var soma=0;
+        var media=0;
+       
+do {
+   
+    n1=parseInt(prompt("Informe um valor: "));
+    if(n1>=0){
+    soma=n1+soma;
+    cont++;
+}
+}
+while (n1>0)
+
+media=soma/cont;
+
+
+
+    document.getElementById("demo").innerHTML ="O total do somatório é: "+soma+" E a media dos valores é :"+media+" foram lidos "+cont+ " valores";
+    </script>
+
+</body>
+
+</html>

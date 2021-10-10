@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content=" Escreva um algoritmo para ler um valor (do teclado) e escrever (na tela) o seu sucessor.">
+    <meta name="author" content="Pedro Rocha">
+    <meta name="keywords" content="exercico,algoritmo,javascript">
+    <title>Algoritmos - 7</title>
+</head>
+
+<body>
+    <!-- Elaborar um programa que efetue a leitura de valores positivos inteiros até que um valor negativo
+seja informado. Ao final devem ser apresentados o maior e o menor valores informados pelo
+usuário. -->
+    <p id="demo"></p>
+    <script>
+        var n1=parseInt(prompt("Informe um valor: "));
+        var maior="";
+        var menor="";
+
+        while (n1>=0) {
+            n1=parseInt(prompt("Informe um valor: "));
+         if(n1>maior){
+             maior=n1;
+         }
+         else
+         menor=n1;
+        }
+        document.getElementById("demo").innerHTML = "O maior numero é "+maior+" e o menor numero é "+menor;
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calcular salario do usuario com reajuste">
+    <meta name="author" content="Pedro Rocha">
+    <meta name="keywords" content="exercico,algoritmo,javascript">
+    <title>Algoritmos - 9</title>
+</head>
+<!-- Escreva um algoritmo para ler o salário mensal atual de um funcionário e o percentual de reajuste.
+Calcular e escrever o valor do novo salário. -->
+<body>
+    <script>
+        var salario = parseFloat(prompt("Informe o seu salario: "));
+        var ajuste = parseFloat(prompt("Informe o porcentual de reajuste "));
+        var total = salario+(ajuste/100*salario)
+        alert("seu salario com reajuste sera de R$"+total.toFixed(2));
+    </script>
+</body>
+
+</html>

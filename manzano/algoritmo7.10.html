@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" Conversor de dolar para reais">
+    <meta name="author" content="Pedro Rocha">
+    <meta name="keywords" content="exercico,algoritmo,javascript">
+    <title>Algoritmos - 7.10</title>
+</head>
+<body>
+<!-- Elaborar um programa que efetue a apresentação do valor da conversão em real de um valor lido em
+dólar. O programa deve solicitar o valor da cotação do dólar e também a quantidade de dólares
+disponível com o usuário, para que seja apresentado o valor em moeda brasileira.
+
+ -->
+    <script>
+        var num1 = parseInt(prompt("Informe um valor em U$(dolar) :"));
+        var num2 = parseInt(prompt("Qual a cotação do dolar:  "))
+        
+        var calc = num1*num2;
+      
+    alert("US$"+num1+" equivale em Reais R$"+calc.toFixed(2)); 
+        
+        
+    </script>
+</body>
+</html>

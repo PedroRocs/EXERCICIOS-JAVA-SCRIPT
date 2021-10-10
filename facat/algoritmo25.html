@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" Verificar o saldo na conta do usuario e exibir se é positivo ou negativo">
+    <meta name="author" content="Pedro Rocha">
+    <meta name="keywords" content="exercico,algoritmo,javascript">
+    <title>Algoritmos - 25</title>
+</head>
+
+<body>
+    <!--    Faça um algoritmo para ler: número da conta do cliente, saldo, débito e crédito. Após, calcular e
+escrever o saldo atual (saldo atual = saldo - débito + crédito). Também testar se saldo atual for maior
+ou igual a zero escrever a mensagem 'Saldo Positivo', senão escrever a mensagem 'Saldo Negativo'.      -->
+    <script>
+        var cliente = parseFloat(prompt("Informe o numero da sua conta:  "));
+        var saldo = parseFloat(prompt("Informe o seu saldo: "));
+        var credito = parseFloat(prompt("Informe o seu credito na conta: "));
+        var debito = parseFloat(prompt("Informe o seu debito: "));
+        var total = saldo+credito-debito
+            if (total<0)  {
+                alert("A conta #"+cliente+" tem SALDO NEGTIVO no valor de R$"+total.toFixed(2));
+            }
+
+        else {
+            
+            alert("a conta #"+cliente+" tem SALDO POSITIVO no valor de R$"+total.toFixed(2));
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content=" Escreva um algoritmo para ler um valor (do teclado) e escrever (na tela) o seu sucessor.">
+    <meta name="author" content="Pedro Rocha">
+    <meta name="keywords" content="exercico,algoritmo,javascript">
+    <title>Algoritmos - 7</title>
+</head>
+
+<body>
+    <!-- Elaborar um programa que apresente os valores de conversão de graus Celsius em Fahrenheit, de
+10 em 10 graus, iniciando a contagem em 10 graus Celsius e finalizando em 100 graus Celsius. O
+programa deve apresentar os valores das duas temperaturas. A fórmula de conversão
+ é F =(9C+16)/5 , sendo F a temperatura em Fahrenheit e C a temperatura em Celsius. -->
+    <p id="demo"></p>
+    <script>
+        var c=10;
+        var f="";
+        while (c<=100){
+               f+=c+"°C EQUIVALE A "+(9*c + 160)/5 +"°F <br>";
+               c=c+10;
+
+        }
+        document.getElementById("demo").innerHTML= f;
+        
+       
+        
+            
+            
+            
+            
+        
+       
+        
+    </script>
+
+</body>
+
+</html>

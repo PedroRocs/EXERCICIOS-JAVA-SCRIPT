@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exibir o total a se pagar referente a quantidade adquirida de maçãs de acordo com a tabela de preços">;
+    <meta name="author" content="Pedro Rocha">
+    <meta name="keywords" content="exercico,algoritmo,javascript">
+    <title>Algoritmos - 16</title>
+</head>
+<body>
+    <!--  As maçãs custam R$ 1,30 cada se forem compradas menos de uma dúzia, e R$ 1,00 se forem
+compradas pelo menos 12. Escreva um programa que leia o número de maçãs compradas, calcule e
+escreva o custo total da compra. -->
+    <script>
+        var num1 = parseInt(prompt("Informe um valor: "));
+        if (num1 < 12 ){
+            var total = num1*1.30;
+            alert("O total a ser pago pelas maçãs será de R$"+total.toFixed(2));
+        }
+        else{
+            alert("O total a ser pago pelas maçãs será de R$"+num1.toFixed(2));
+        }
+        
+    </script>
+</body>
+</html>

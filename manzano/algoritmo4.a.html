@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" Escreva um algoritmo para ler um valor (do teclado) e escrever (na tela) o seu sucessor.">
+    <meta name="author" content="Pedro Rocha">
+    <meta name="keywords" content="exercico,algoritmo,javascript">
+    <title>Algoritmos - 7</title>
+</head>
+<body>
+    <!-- Ler o valor correspondente ao salário mensal (variável SM) de um trabalhador e também o valor do
+percentual de reajuste (variável PR) a ser atribuído. Apresentar o valor do novo salário (variável NS).
+
+ -->
+    <script>
+        var n1 = parseInt(prompt("INFORME O PRIMEIRO VALOR:  "));
+        var n2 =parseInt(prompt("INFORME O SEGUNDO VALOR: "));
+        if(n1>n2){
+            var dif = n1-n2;
+       }
+       else{
+           var dif = n2-n1;
+       }
+
+       alert("A DIFERENÇA ENTRE OS VALORES É: "+dif);
+        
+    </script>
+</body>
+</html>  

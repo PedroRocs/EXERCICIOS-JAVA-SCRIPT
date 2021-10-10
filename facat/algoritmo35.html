@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" Algoritmo que ler o tipo de combustivel e quantidade desejada e informa o valor total a ser pago no final">
+    <meta name="author" content="Pedro Rocha">
+    <meta name="keywords" content="exercico,algoritmo,javascript">
+    <title>Algoritmos - 35</title>
+</head>
+
+<body>
+    <!--
+        Escreva um algoritmo que leia o número de litros vendidos e o tipo de combustível (codificado da
+seguinte forma: A-álcool, G-gasolina), calcule e imprima o valor a ser pago pelo cliente sabendo-se
+que o preço do litro da gasolina é R$ 3,30 e o preço do litro do álcool é R$ 2,90.  ---->
+    <script>
+        var combustivel = (prompt("Informe o tipo de combustive: "));
+        var quantidade = parseFloat(prompt("Informe quantos litro deseja: "));
+
+        if (combustivel == "G" && quantidade <= 20) {
+            var desconto = (0.04 * 3.30) * quantidade;
+            var total = 3.30 * quantidade - desconto;
+            alert("O TIPO DE COMBUSTIVEL QUE VOCÊ ESCOLHEU FOI GASOLINA \n E A QUANTIDADE FOI " + quantidade +
+                " LITROS \n E O TOTAL A SER PAGO É R$" + total.toFixed(2));
+        } 
+        else if (combustivel == "G" && quantidade > 20) {
+            var desconto = (0.06 * 3.30) * quantidade;
+            var total = 3.30 * quantidade - desconto;
+            alert("O TIPO DE COMBUSTIVEL QUE VOCÊ ESCOLHEU FOI GASOLINA \n E A QUANTIDADE FOI " + quantidade +
+                " LITROS \n E O TOTAL A SER PAGO É R$" + total.toFixed(2));
+        } 
+        else if (combustivel == "A" && quantidade <= 20) {
+            var desconto = (0.03 * 2.90) * quantidade;
+            var total = 2.90 * quantidade - desconto;
+            alert("O TIPO DE COMBUSTIVEL QUE VOCÊ ESCOLHEU FOI GASOLINA \n E A QUANTIDADE FOI " + quantidade +
+                " LITROS \n E O TOTAL A SER PAGO É R$" + total.toFixed(2));
+        }
+        else {
+            var desconto = (0.05 * 2.90) * quantidade;
+            console.log(desconto)
+            var total = 2.90 * quantidade - desconto;
+            alert("O TIPO DE COMBUSTIVEL QUE VOCÊ ESCOLHEU FOI ALCOOL \n E A QUANTIDADE FOI " + quantidade +
+                " LITROS \n E O TOTAL A SER PAGO É R$" + total.toFixed(2));
+        }
+       
+    </script>
+</body>
+
+</html>

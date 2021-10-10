@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" Ler dois valores e dizer s são iguais se o primeiro é maior ou segundo">
+    <meta name="author" content="Pedro Rocha">
+    <meta name="keywords" content="exercico,algoritmo,javascript">
+    <title>Algoritmos - 33</title>
+</head>
+
+<body>
+    <!--Ler dois valores e imprimir uma das três mensagens a seguir:
+‘Números iguais’, caso os números sejam iguais
+‘Primeiro é maior’, caso o primeiro seja maior que o segundo;
+‘Segundo maior’, caso o segundo seja maior que o primeiro.   ---->
+    <script>
+        var valor1 = parseFloat(prompt("Informe um valor: "));
+        var valor2 = parseFloat(prompt("Informe outro valor: "))   
+        
+        if(valor1 == valor2) {
+            alert("OS DOIS VALORES SÃO IGUAIS");
+
+        }
+        else if (valor1>valor2) {
+            alert("O PRIMEIRO VALOR  QUE É " +valor1+ " É O MAIOR");
+        }
+        else{
+            alert("O SEGUNDO VALOR  QUE É " +valor2+ " É O MAIOR");
+        }
+        
+    </script>
+</body>
+
+</html>

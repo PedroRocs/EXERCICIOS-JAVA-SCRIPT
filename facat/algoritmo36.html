@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" Ler a idade de 2 homens e 2 mulheres e some a idade do homem mais velho com a mais nova e homem mais novo com a mulher mais velha">
+    <meta name="author" content="Pedro Rocha">
+    <meta name="keywords" content="exercico,algoritmo,javascript">
+    <title>Algoritmos - 36</title>
+</head>
+
+<body>
+    <!--
+         Escreva um algoritmo que leia as idades de 2 homens e de 2 mulheres (considere que as idades
+dos homens serão sempre diferentes entre si, bem como as das mulheres). Calcule e escreva a soma
+das idades do homem mais velho com a mulher mais nova, e o produto das idades do homem mais
+novo com a mulher mais velha.  ---->
+    <script>
+        var h1 = parseInt(prompt("Informe a idade do primerio homem: "));
+        var h2 = parseInt(prompt("informe a idade do segundo homem:"));
+        var m1 = parseInt(prompt("informe a idade da primeira mulher "));
+        var m2 = parseInt(prompt("informe a idade da segunda mulher "));
+        
+
+        if(h1>h2 && m1>m2){
+           var soma=h1+m2;
+           var menor = h2+m1;
+            
+        }
+        if(h2>h1 && m2>m1){
+            var soma=h2+m1;
+            var menor= h1+m2;
+            
+        }
+        if(h1>h2 && m2>m1){
+           var soma=h1+m2;
+           var menor=h2+m2;
+            
+        }
+        if(h2>h1 && m1>m2){
+            var soma=h2+m2;
+            var menor=h1+m1;  
+        }
+
+        alert("A soma do homem mais velho com a mulher mais nova é "+soma+" \n e a soma do homem mais novo com a mulher mais velha é " + menor)
+      
+
+        
+    </script>
+</body>
+
+</html>

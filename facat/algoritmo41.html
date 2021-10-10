@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" Calcular média ponderada do aluo">
+    <meta name="author" content="Pedro Rocha">
+    <meta name="keywords" content="exercico,algoritmo,javascript">
+    <title>Algoritmos - 41</title>
+</head>
+
+<body>
+    <!--
+) Faça um algoritmo para ler as 3 notas obtidas por um aluno nas 3 verificações e a média dos
+exercícios que fazem parte da avaliação. Calcular a média de aproveitamento, usando a fórmula abaixo
+e escrever o conceito do aluno de acordo com a tabela de conceitos mais abaixo:
+                          N1 + N2 * 2 + N3 * 3 + Média_dos_Exercícios
+Média_de_Aproveitamento = ------------------------------------------
+                                               7
+---->
+<script>
+    var nota1=parseFloat(prompt("INFORME A PRIMEIRA NOTA: "));
+    var nota2=parseFloat(prompt("INFORME A SEGUNDA NOTA: "));
+    var nota3=parseFloat(prompt("INFORME A TERCEIRA NOTA: "));
+    var Mediadeexercicio=parseFloat(prompt("Informe sua media nos exercicios: "));
+    var media_Aproveitamento = (nota1+nota2*2+nota3*3+Mediadeexercicio)/7;
+
+    if(media_Aproveitamento>=9){
+        alert("Você atingiu a média de aproveitamento A");
+    }
+    else if(media_Aproveitamento>=7.5 && media_Aproveitamento<9.0){
+        alert("Você atingiu a média de aproveitamento B");
+
+    }
+    if(media_Aproveitamento>=6 && media_Aproveitamento<7.5){
+        alert("Você atingiu a média C");
+    }
+    else if(media_Aproveitamento<6){
+        alert("Você atingiu a média de aproveitamento D");
+
+    }
+</script>
+
+</body>
+
+</html>

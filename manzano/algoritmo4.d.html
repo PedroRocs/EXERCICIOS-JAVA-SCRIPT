@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" Escreva um algoritmo para ler um valor (do teclado) e escrever (na tela) o seu sucessor.">
+    <meta name="author" content="Pedro Rocha">
+    <meta name="keywords" content="exercico,algoritmo,javascript">
+    <title>Algoritmos - 7</title>
+</head>
+<body>
+    <!--Ler quatro valores referentes a quatro notas escolares de um aluno e imprimir uma mensagem
+dizendo que o aluno foi aprovado, se o valor da média escolar for maior ou igual a 7. Se o valor da
+média for menor que 7, solicitar a nota de exame, somar com o valor da média e obter nova média.
+Se a nova média for maior ou igual a 5, apresentar uma mensagem dizendo que o aluno foi
+aprovado em exame. Se o aluno não foi aprovado, indicar uma mensagem informando esta
+condição. Apresentar com as mensagens o valor da média do aluno, para qualquer condição.   
+
+ -->
+    <script>
+        var nota1 = parseInt(prompt("INFORME O PRIMEIRO VALOR:  "));
+        var nota2 = parseInt(prompt("INFORME O SEGUNDO VALOR:  "));
+        var nota3 = parseInt(prompt("INFORME O TERCEIRO VALOR:  "));
+        var nota4 = parseInt(prompt("INFORME O QUARTO VALOR:  "));
+        var media = (nota1+nota2+nota3+nota4)/4
+   
+       
+        if(media<7){
+        var exame=parseFloat(prompt("Informe o valor do exame: ")) ;
+        var media = (nota1+nota2+nota3+nota4+exame)/5
+        if (media>=5){
+        alert("O ALUNO FOI REPROVADO COM  A MÉDIA "+media.toFixed(1));
+        }
+        else {
+            alert("O ALUNO FOI APROVADO COM A NOTA DE EXAME COM A MÉDIA "+media.toFixed(1));
+        }
+       }
+       else{
+        alert("O ALUNO FOI APROVADO COM A MÉDIA "+media.toFixed(1));
+       }
+    
+      
+        
+     
+       
+     
+
+      
+        
+    </script>
+</body>
+</html>  

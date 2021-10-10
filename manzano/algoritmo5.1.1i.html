@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content=" Escreva um algoritmo para ler um valor (do teclado) e escrever (na tela) o seu sucessor.">
+    <meta name="author" content="Pedro Rocha">
+    <meta name="keywords" content="exercico,algoritmo,javascript">
+    <title>Algoritmos - 7</title>
+</head>
+
+<body>
+    <!-- Elaborar um programa que efetue a leitura de 10 valores numéricos e apresente no final o total do
+somatório e a média aritmética dos valores lidos.  -->
+    <p id="demo"></p>
+    <script>
+        var n1="";
+        var media="";
+        var soma=0;
+        var cont=0;
+        alert("Informe 10 valores");
+
+        while (cont<10){
+            n1=parseInt(prompt("Informe um valor: "))
+            soma=+soma+n1;
+            cont++;
+        }
+        media="A MÉDIA DOS VALORES INSERIDOS SÃO " +soma/10;
+        document.getElementById("demo").innerHTML= media;
+        
+       
+        
+            
+            
+            
+            
+        
+       
+        
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" Calcular quanto um vendedor vai ter que receber de acordo com o valor de suas vendas e comissão ">
+    <meta name="author" content="Pedro Rocha">
+    <meta name="keywords" content="exercico,algoritmo,javascript">
+    <title>Algoritmos - 24</title>
+</head>
+<body>
+    <!--   Ler o salário fixo e o valor das vendas efetuadas pelo vendedor de uma empresa. Sabendo-se que
+ele recebe uma comissão de 3% sobre o total das vendas até R$ 1.500,00 mais 5% sobre o que
+ultrapassar este valor, calcular e escrever o seu salário total.     -->
+    <script>
+        var salarioFixo =  parseFloat(prompt("Informe o seu salario fixo"));
+        var venda = parseFloat(prompt("Informe o valor de suas vendas"));
+     
+        if(venda >1500 ){
+            comissao= (3/100*venda) + (5/100*(venda-1500));
+            total= salarioFixo+comissao;
+            alert("Seu salario final sera de R$"+total.toFixed(2));
+        }
+
+        else {
+            comissao= (3/100*venda)
+            total = salarioFixo+comissao;
+            alert("Seu salario final sera de R$"+total.toFixed(2));
+
+        }
+    </script>
+</body>
+</html>

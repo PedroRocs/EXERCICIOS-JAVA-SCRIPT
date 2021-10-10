@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content=" Escreva um algoritmo para ler um valor (do teclado) e escrever (na tela) o seu sucessor.">
+    <meta name="author" content="Pedro Rocha">
+    <meta name="keywords" content="exercicio,algoritmo,javascript">
+    <title>Algoritmos - 7</title>
+   
+</head>
+
+<body>
+
+    <!--Apresentar os resultados das potências de 3, variando do expoente 0 até o expoente 15. Deve ser
+considerado que qualquer número elevado a zero é 1, e elevado a 1 é ele próprio. Observe que
+neste exercício não pode ser utilizado o operador de exponenciação do portuguol (^). 
+-->
+    <p id="troca"></p>
+    <script>
+        var base= parseInt(prompt("Informe a base: "));
+        var exp=parseInt(prompt("Informe o expoente: "));
+        var pot=0;
+        var total="";
+        for (let cont = 0; cont <= exp; cont++) {
+            if (cont == 0) {
+                pot= 1;
+                total="O RESULTADO DA POTENCIA DE "+base+ " ELEVADO A " + exp + " É " +pot+"<br>";
+               
+            } 
+            else {
+                pot = base*pot;
+                total="O RESULTADO DA POTENCIA DE "+base+" ELEVADO A "+ exp +" É " +pot+"<br>";
+            }
+        }
+
+
+
+        document.getElementById("troca").innerHTML = total;
+    </script>
+
+</body>
+
+</html>

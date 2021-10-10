@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" Ler o nome de dois times e a quantidade de gols marcados durante a partida e dizer quem ganhou ou se deu empate">
+    <meta name="author" content="Pedro Rocha">
+    <meta name="keywords" content="exercico,algoritmo,javascript">
+    <title>Algoritmos - 32</title>
+</head>
+
+<body>
+    <!--Ler o nome de 2 times e o número de gols marcados na partida (para cada time). Escrever o nome
+do vencedor. Caso não haja vencedor deverá ser impressa a palavra EMPATE. ---->
+    <script>
+        var time1 =(prompt("INFORME O NOME DO PRIMEIRO TIME:  "));
+        var gol1 = parseInt(prompt("INFORME QUANTOS GOLS O TIME MARCOU:  "));
+        var time2 = (prompt("INFORME O NOME DO SEGUNDO TIME:  "));
+        var gol2 = parseInt(prompt("INFORME QUANTOS GOLS O TIME MARCOU:  "));
+        
+
+
+        if (gol1>gol2) {
+            
+            alert("O TIME "+time1+" FOI O VENCEDOR DO JOGO POIS MARCOU "+gol1+"X"+gol2+" CONTRA O "+time2);
+        } 
+        else  if (gol2>gol1) {
+            
+            alert("O TIME "+time2+" FOI O VENCEDOR DO JOGO POIS MARCOU "+gol2+"X"+gol1+" CONTRA O "+time1);
+        } 
+        else {
+            
+            alert("O JOGO ACABOU EM EMPATE COM O PLACAR DE "+gol1+"X"+gol2);
+        }
+    </script>
+</body>
+
+</html>

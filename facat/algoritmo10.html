@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calcula o custo real do carro baseado em seu custo de fábrica, da porcentagem do distribuidor e do imposto.">
+    <meta name="author" content="Pedro Rocha">
+    <meta name="keywords" content="exercico,algoritmo,javascript">
+    <title>Algoritmos - 10</title>
+</head>
+
+<body>
+    <!--O custo de um carro novo ao consumidor é a soma do custo de fábrica com a porcentagem do
+distribuidor e dos impostos (aplicados ao custo de fábrica). Supondo que o percentual do distribuidor
+seja de 28% e os impostos de 45%, escrever um algoritmo para ler o custo de fábrica de um carro,
+calcular e escrever o custo final ao consumidor.  -->
+    <script>
+        var carro = parseFloat(prompt("Informe o valor do carro: "));
+        var tot = (28/100*carro) + (45/100*carro) +carro;
+        alert("O valor final do carro vai custar R$"+tot.toFixed(2));
+    </script>
+</body>
+
+</html>

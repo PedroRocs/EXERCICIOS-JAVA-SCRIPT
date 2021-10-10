@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content=" Escreva um algoritmo para ler um valor (do teclado) e escrever (na tela) o seu sucessor.">
+    <meta name="author" content="Pedro Rocha">
+    <meta name="keywords" content="exercicio,algoritmo,javascript">
+    <title>Algoritmos - 7</title>
+
+</head>
+
+<body>
+
+    <!--Elaborar um programa que apresente como resultado o valor do fatorial dos valores ímpares
+situados na faixa numérica de 1 a 10.
+-->
+    <p id="troca"></p>
+    <script>
+        var totalFatorial = "";
+        var total = "";
+        var n1 = "";
+        var fatorial = "";
+
+
+
+        for (let cont = 0; cont <= 20; cont++) {
+
+            if (cont % 2 != 0) {
+                n1 = cont;
+                fatorial = n1;
+                for (let contFatorial = n1-1; contFatorial > 1; contFatorial--) {
+                    fatorial = fatorial * contFatorial;
+                }
+                total += "O fatorial de " + n1 + " é " + fatorial + "<br>";
+            }
+
+        }
+        document.getElementById("troca").innerHTML = total;
+    </script>
+
+</body>
+
+</html>

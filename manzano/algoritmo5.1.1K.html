@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content=" Escreva um algoritmo para ler um valor (do teclado) e escrever (na tela) o seu sucessor.">
+    <meta name="author" content="Pedro Rocha">
+    <meta name="keywords" content="exercico,algoritmo,javascript">
+    <title>Algoritmos - 7</title>
+</head>
+
+<body>
+    <!-- Elaborar um programa que possibilite calcular a área total de uma residência (sala, cozinha,
+banheiro, quartos, área de serviço, quintal, garagem, etc.). O programa deve solicitar a entrada do
+nome, a largura e o comprimento de um determinado cômodo. Em seguida, deve apresentar a área 
+do cômodo lido e também uma mensagem solicitando do usuário a confirmação de continuar
+calculando novos cômodos. Caso o usuário responda “NAO”, o programa deve apresentar o valor
+total acumulado da área residencial. -->
+    <p id="demo"></p>
+    <script>
+        var comodo="";
+        var larg=0;
+        var comp=0;
+        var area=0;
+        var conf="S";
+        var total=0;
+
+        while (conf=="S") {
+            larg=parseFloat(prompt("Informe a largura do comodo: "));
+            comp=parseFloat(prompt("Informe o comprimento do comodo:")); 
+            area=larg*comp;
+            alert("a Area do comodo "+comodo+" é "+area+"m³");
+            total=total+area
+            conf=prompt("DESEJA CONTINUAR O CALCULO ?");
+        }
+        total="O VALOR TOTAL DA AREA DA SUA CASA É :"+total;
+        document.getElementById("demo").innerHTML = total;
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" Escreva um algoritmo para ler um valor (do teclado) e escrever (na tela) o seu sucessor.">
+    <meta name="author" content="Pedro Rocha">
+    <meta name="keywords" content="exercico,algoritmo,javascript">
+    <title>Algoritmos - 7.5</title>
+</head>
+<body>
+<!-- Ler quatro números inteiros e apresentar o resultado da adição e multiplicação, baseando-se nautilização do conceito da propriedade distributiva. Ou seja, se forem lidas as variáveis A, B, C, e D,devem ser somadas e multiplicadas A com B, A com C e A com D. Depois B com C, B com D e por fimC com D. Perceba que será necessário efetuar seis operações de adição e seis operações de multiplicação e apresentar doze resultados de saída. -->
+    <script>
+
+        var a = parseInt(prompt("Informe um valor da variavel  :  "));
+        var b = parseInt(prompt("Informe outro valor valor da variavel  :  "));
+        var c = parseInt(prompt("Informe um valor da variavel  :  "));
+        var d = parseInt(prompt("Informe outro valor valor da variavel  :  "));
+      
+        alert("O valor da soma das 4 valores com aplicação da propriedade distributiva é :  "  + parseInt(a+b)+ "\n" + parseInt(a+c)+ "\n" + parseInt(a+d) + "\n"+  parseInt(b+c) + "\n"+ parseInt(b+d)+ "\n" + parseInt(c+d) ); 
+        
+        alert( "O valor da soma das 4 valores com aplicação da propriedade distributiva é :  "  + parseInt(a*b) +"\n" +  parseInt(a*c) + "\n"+ parseInt(a*d) + "\n"+ parseInt(b*c) + "\n"+ parseInt(b*d) + "\n"+ parseInt(c*d));
+    </script>
+</body>
+</html>
